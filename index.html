@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sociology Summative Reflection Assessment</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">High School Sociology</p>
+      <h1>Social Inequality Summative Reflection</h1>
+      <p class="subtitle">Watch two short videos, answer each question, review your work, and submit your responses.</p>
+    </div>
+    <button class="mode-toggle" id="modeToggle" type="button" aria-label="Switch between light and dark mode">Dark mode</button>
+  </header>
+
+  <div class="progress-wrap" aria-label="Assessment progress">
+    <div class="progress-label">
+      <span id="progressText">0% complete</span>
+      <span id="saveStatus">Progress saves in this browser</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+
+  <main class="container">
+    <form id="assessmentForm" novalidate>
+      <section class="card intro-card" data-section="intro">
+        <h2>Purpose and directions</h2>
+        <p>
+          This assessment asks you to use sociology ideas to explain inequality in society. You will think about social class,
+          race, gender, institutions, and how people respond to unfair conditions. Use complete sentences for written answers.
+        </p>
+        <ul class="directions-list">
+          <li>Estimated time: <strong>35–45 minutes</strong>.</li>
+          <li>All questions are required.</li>
+          <li>Your progress saves automatically on this device and browser.</li>
+          <li>You will see a review screen before your final submission.</li>
+        </ul>
+
+        <label class="field-label" for="studentName">Student name <span aria-hidden="true">*</span></label>
+        <input id="studentName" name="studentName" type="text" autocomplete="name" required placeholder="Enter your full name" />
+      </section>
+
+      <section class="card standards-card" aria-labelledby="standardsTitle">
+        <h2 id="standardsTitle">Standards you will show</h2>
+        <div class="standard-grid">
+          <p><strong>SS.9-12.Soc.12</strong><br />Explain social stratification and how it affects social structures and individual opportunities.</p>
+          <p><strong>SS.9-12.Soc.13</strong><br />Analyze how social inequality affects groups and individuals.</p>
+          <p><strong>SS.9-12.Soc.14</strong><br />Explain how social institutions and inequality are connected.</p>
+          <p><strong>SS.9-12.Soc.15</strong><br />Evaluate how people and groups respond to social inequality.</p>
+        </div>
+      </section>
+
+      <section class="card" data-section="video1">
+        <h2>Video 1: Social class, stratification, and life chances</h2>
+        <p class="section-note">Watch the full video. Then answer the questions below using ideas from the video.</p>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/Mqrhn8khGLM" title="Video 1 sociology assessment" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <fieldset class="question" data-standard="SS.9-12.Soc.12">
+          <legend>1. Which answer best explains social stratification? <span>*</span></legend>
+          <label><input type="radio" name="v1_q1" value="A system that ranks groups in layers based on things like wealth, power, and status" required /> A system that ranks groups in layers based on things like wealth, power, and status</label>
+          <label><input type="radio" name="v1_q1" value="A rule that makes every person have the same job" /> A rule that makes every person have the same job</label>
+          <label><input type="radio" name="v1_q1" value="A list of personal hobbies people choose" /> A list of personal hobbies people choose</label>
+          <label><input type="radio" name="v1_q1" value="A law that removes all differences between people" /> A law that removes all differences between people</label>
+        </fieldset>
+
+        <div class="question" data-standard="SS.9-12.Soc.12">
+          <label for="v1_q2">2. In your own words, describe the U.S. class system. Include at least two factors that can place people in different class positions. <span>*</span></label>
+          <textarea id="v1_q2" name="v1_q2" rows="4" required></textarea>
+        </div>
+
+        <fieldset class="question" data-standard="SS.9-12.Soc.12">
+          <legend>3. What does the term life chances mean? <span>*</span></legend>
+          <label><input type="radio" name="v1_q3" value="The opportunities people have for health, education, safety, work, and a stable life" required /> The opportunities people have for health, education, safety, work, and a stable life</label>
+          <label><input type="radio" name="v1_q3" value="The number of times a person changes schools" /> The number of times a person changes schools</label>
+          <label><input type="radio" name="v1_q3" value="A game of luck that has no connection to society" /> A game of luck that has no connection to society</label>
+          <label><input type="radio" name="v1_q3" value="A person’s favorite goals for the future only" /> A person’s favorite goals for the future only</label>
+        </fieldset>
+
+        <div class="question" data-standard="SS.9-12.Soc.13">
+          <label for="v1_q4">4. Give one piece of evidence or one example from Video 1 that shows how class can affect a person's opportunities. <span>*</span></label>
+          <textarea id="v1_q4" name="v1_q4" rows="4" required></textarea>
+        </div>
+      </section>
+
+      <section class="card" data-section="video2">
+        <h2>Video 2: Race, gender, institutions, and inequality</h2>
+        <p class="section-note">Watch the full video. Then answer the questions below using ideas from the video.</p>
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/hP8dLUxBfs" title="Video 2 sociology assessment" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <fieldset class="question" data-standard="SS.9-12.Soc.13">
+          <legend>5. Which choice best shows how inequality can affect a group? <span>*</span></legend>
+          <label><input type="radio" name="v2_q1" value="A group has less access to safe housing, strong schools, fair jobs, or healthcare" required /> A group has less access to safe housing, strong schools, fair jobs, or healthcare</label>
+          <label><input type="radio" name="v2_q1" value="A group has different favorite foods" /> A group has different favorite foods</label>
+          <label><input type="radio" name="v2_q1" value="A group chooses the same music" /> A group chooses the same music</label>
+          <label><input type="radio" name="v2_q1" value="A group lives in one time zone" /> A group lives in one time zone</label>
+        </fieldset>
+
+        <div class="question" data-standard="SS.9-12.Soc.13">
+          <label for="v2_q2">6. Explain how race, gender, and class can affect a person's opportunities. You may discuss school, work, housing, health, safety, or respect from others. <span>*</span></label>
+          <textarea id="v2_q2" name="v2_q2" rows="5" required></textarea>
+        </div>
+
+        <fieldset class="question" data-standard="SS.9-12.Soc.14">
+          <legend>7. Which statement best explains how institutions can reinforce inequality? <span>*</span></legend>
+          <label><input type="radio" name="v2_q3" value="Institutions can create rules, habits, or patterns that give some groups more access than others" required /> Institutions can create rules, habits, or patterns that give some groups more access than others</label>
+          <label><input type="radio" name="v2_q3" value="Institutions always treat every person exactly the same in every situation" /> Institutions always treat every person exactly the same in every situation</label>
+          <label><input type="radio" name="v2_q3" value="Institutions are only buildings and cannot affect people" /> Institutions are only buildings and cannot affect people</label>
+          <label><input type="radio" name="v2_q3" value="Institutions only matter in sports" /> Institutions only matter in sports</label>
+        </fieldset>
+
+        <div class="question" data-standard="SS.9-12.Soc.14">
+          <label for="v2_q4">8. Choose two institutions from this list: education, housing, jobs, government, healthcare. Explain how each one can either reinforce inequality or challenge inequality. <span>*</span></label>
+          <textarea id="v2_q4" name="v2_q4" rows="6" required></textarea>
+        </div>
+      </section>
+
+      <section class="card" data-section="comparison">
+        <h2>Compare both videos</h2>
+        <div class="question" data-standard="SS.9-12.Soc.12, SS.9-12.Soc.13">
+          <label for="compare_q1">9. Compare and contrast the two videos. What is one idea they have in common? What is one way they focus on inequality differently? <span>*</span></label>
+          <textarea id="compare_q1" name="compare_q1" rows="6" required></textarea>
+        </div>
+
+        <div class="question" data-standard="SS.9-12.Soc.14">
+          <label for="compare_q2">10. Use evidence from both videos to explain how institutions are connected to inequality. Include at least one example from each video. <span>*</span></label>
+          <textarea id="compare_q2" name="compare_q2" rows="6" required></textarea>
+        </div>
+
+        <fieldset class="question" data-standard="SS.9-12.Soc.15">
+          <legend>11. Which response to inequality is most connected to government policy? <span>*</span></legend>
+          <label><input type="radio" name="compare_q3" value="Passing laws or funding programs to improve access to education, housing, jobs, or healthcare" required /> Passing laws or funding programs to improve access to education, housing, jobs, or healthcare</label>
+          <label><input type="radio" name="compare_q3" value="Only changing one person's daily schedule" /> Only changing one person's daily schedule</label>
+          <label><input type="radio" name="compare_q3" value="Ignoring patterns across groups" /> Ignoring patterns across groups</label>
+          <label><input type="radio" name="compare_q3" value="Choosing a new favorite activity" /> Choosing a new favorite activity</label>
+        </fieldset>
+      </section>
+
+      <section class="card" data-section="reflection">
+        <h2>Final summative reflection</h2>
+        <div class="question" data-standard="SS.9-12.Soc.15">
+          <label for="final_q1">12. Evaluate three ways people or groups can respond to inequality: individual choices, social movements, and government policies. Which response do you think can create the most change? Explain why. <span>*</span></label>
+          <textarea id="final_q1" name="final_q1" rows="8" required></textarea>
+        </div>
+
+        <div class="question" data-standard="SS.9-12.Soc.12, SS.9-12.Soc.13, SS.9-12.Soc.14, SS.9-12.Soc.15">
+          <label for="final_q2">13. Personal sociology reflection: What is one idea from this assessment that changed, challenged, or strengthened your thinking about inequality? Connect your answer to at least two sociology concepts, such as social stratification, class system, life chances, institutions, race, gender, class, or social movements. <span>*</span></label>
+          <textarea id="final_q2" name="final_q2" rows="8" required></textarea>
+        </div>
+      </section>
+
+      <section class="card review-card" id="reviewScreen" hidden>
+        <h2>Review your responses</h2>
+        <p>Read through your work before submitting. If you need to make changes, scroll back to the question and edit your answer.</p>
+        <div id="reviewContent" class="review-content"></div>
+      </section>
+
+      <div class="form-actions">
+        <button type="button" class="secondary-button" id="clearDraftButton">Clear saved draft</button>
+        <button type="button" class="primary-button" id="reviewButton">Review before submitting</button>
+        <button type="submit" class="primary-button submit-button" id="submitButton" hidden>Submit final responses</button>
+      </div>
+
+      <p class="error-message" id="formMessage" role="alert" aria-live="polite"></p>
+    </form>
+
+    <section class="card confirmation-card" id="confirmationScreen" hidden tabindex="-1">
+      <h2>Submission received</h2>
+      <p>Thank you. Your sociology summative reflection has been prepared and sent to your teacher.</p>
+      <p class="confirmation-details" id="confirmationDetails"></p>
+      <button type="button" class="secondary-button" id="newSubmissionButton">Start a new response</button>
+    </section>
+  </main>
+</body>
+</html>
